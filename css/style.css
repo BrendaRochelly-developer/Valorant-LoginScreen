@@ -1,0 +1,247 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --whitesmoke: #f9f9f9;
+    --light-grey: #ececec;
+    --grey: #c4c4c4;
+    --medium-grey: #a7a7a7;
+    --deep-grey: #343434;
+    --black: #000000;
+    --blue: #1877f3;
+    --light-blue: #b2d0f6;
+    --green: #51af39;
+    --red: #cf3c3f;
+}
+
+main {
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.login {
+    width: 27%;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    background-color: var(--white);
+    flex-direction: column;
+    margin-right: 12%;
+    margin-left: 61%;
+    margin-top: 7%;
+    height: 580px;
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.riot_games_logo {
+    width: 10%;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 4%;
+    
+
+}
+
+/* ---------  LOGIN USUÁRIO  ---------- */
+
+.login_title {
+    color: var(--deep-grey);
+    font-size: 1.5em;   
+    margin-bottom: 50px;
+    margin-top: 55px;
+}
+ 
+.login_label {
+    display:flex;
+    margin-bottom: 22px;
+    width: 80%;
+}
+
+.input {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: var(--light-grey);
+    outline: none;
+    padding: 25px  10px  10px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--deep-grey);
+}
+
+.login_label span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    margin-left: 30px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.input:focus {
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.login_label .span-active {
+    font-size: 0.7em;
+    margin: 8px 10px; 
+}
+
+/*  ---------        ICONS               --------  */
+
+
+.login_icons {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+}
+
+.login_icons img {
+    width: 20px;
+}
+
+.icons_button {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 6px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+.login_icons .icons_button:nth-child(1) {
+    background-color: var(--blue);
+}
+
+.login_icons .icons_button:nth-child(2) {
+    background-color: var(--whitesmoke);
+}
+
+.login_icons .icons_button:nth-child(3) {
+    background-color: var(--black);
+}
+
+.login_icons .icons_button:nth-child(4) {
+    background-color: var(--green);
+}
+
+
+/* -------   CHECKBOX   --------  */
+
+
+.login_label--checkbox{
+    width: 80%;
+    margin: 22px 0 40px;
+    font-size: 0.7em;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+    
+}
+
+.input--checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--light-grey);
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.input--checkbox:checked {
+    background-color: var(--red);
+}
+
+.input--checkbox:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.login_button {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: var(--red);
+}
+
+.login_button svg {
+    fill: white;
+}
+
+.login_button:disabled {
+    cursor: auto;
+    background-color: white;
+    border: 2px solid var(--light-grey);
+
+}
+
+.login_button:disabled svg {
+    fill: var(--light-grey);
+}
+
+.login_link {
+    font-size: 0.7em;
+    text-decoration: none;
+    color: var(--medium-grey);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+/* ----- wallpaper ---- */
+
+.wallpaper {
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.valorant_wallpaper {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 729px;
+    align-items: center;
+    
+}
